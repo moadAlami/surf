@@ -40,4 +40,5 @@ instance of tabbed.
 This build uses the following patches:
 
   * [bookmarking](https://surf.suckless.org/patches/bookmarking/) - Uses cat to add all strings from ~/.surf/bookmarks to the input dmenu. Ctrl-m is used to add a new bookmark.
+  * [dlconsole](https://surf.suckless.org/patches/dlconsole/) - Removes the original downloading method of calling an external tool and adds built-in support for downloads, along with a simple console display with a list of downloads.
   * [searchengines](https://surf.suckless.org/patches/searchengines/) - This patch allows the simple use of search engines.
