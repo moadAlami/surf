@@ -2276,7 +2276,11 @@ main(int argc, char *argv[])
 	if (argc > 0)
 		arg.v = argv[0];
 	else
+#ifdef HOMEPAGE /* homepage patch */
+		arg.v = HOMEPAGE; /* homepage patch */
+#else /* homepage patch */
 		arg.v = "about:blank";
+#endif /* homepage patch */
 
 	setup();
 	c = newclient(NULL);
