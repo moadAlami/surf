@@ -50,6 +50,13 @@ static Parameter defconfig[ParameterLast] = {
 	[ZoomLevel]           =       { { .f = 1.0 },   },
 };
 
+/* searchengines patch */
+static SearchEngine searchengines[] = {
+	{ "g",   "http://www.google.de/search?q=%s"   },
+	{ "leo", "http://dict.leo.org/ende?search=%s" },
+	{ "d", "https://duckduckgo.com/?q=%s" },
+};
+
 static UriParameters uriparams[] = {
 	{ "(://|\\.)suckless\\.org(/|$)", {
 	  [JavaScript] = { { .i = 0 }, 1 },

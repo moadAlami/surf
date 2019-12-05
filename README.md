@@ -40,3 +40,4 @@ instance of tabbed.
 This build uses the following patches:
 
   * [bookmarking](https://surf.suckless.org/patches/bookmarking/) - Uses cat to add all strings from ~/.surf/bookmarks to the input dmenu. Ctrl-m is used to add a new bookmark.
+  * [searchengines](https://surf.suckless.org/patches/searchengines/) - This patch allows the simple use of search engines.
