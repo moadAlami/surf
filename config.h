@@ -8,7 +8,7 @@ static char *cachedir       = "~/.surf/cache/";
 static char *cookiefile     = "~/.surf/cookies.txt";
 
 /* history patch */
-static char *historyfile    = "~/.surf/history.txt";
+static char *historyfile    = "~/.surf/history";
 
 
 /* dlconsole patch */
@@ -122,7 +122,7 @@ static WebKitFindOptions findopts = WEBKIT_FIND_OPTIONS_CASE_INSENSITIVE |
 
 /* history patch */
 #define SETURI(p)       { .v = (char *[]){ "/bin/sh", "-c", \
-"prop=\"`surf_history_dmenu.sh`\" &&" \
+"prop=\"`$HOME/github/surf/surf_history_dmenu.sh`\" &&" \
 "xprop -id $1 -f $0 8s -set $0 \"$prop\"", \
 p, winid, NULL } }
 
