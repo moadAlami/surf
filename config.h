@@ -12,7 +12,7 @@ static char *historyfile    = "~/.surf/history";
 
 
 /* dlconsole patch */
-static char *dldir          = "~/dl/";
+static char *dldir          = "~/Downloads/";
 static char *dlstatus       = "~/.surf/dlstatus/";
 
 /* Webkit default features */
